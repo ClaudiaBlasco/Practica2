@@ -9,7 +9,7 @@ float V2[N];
 float V3[N];
 float V4[N];
 
-
+//definim les variables per poder utilitzar-les en els apartats
 void InitData(){
 	int i,j;
 	srand(4422543);
@@ -31,9 +31,7 @@ void InitData(){
 
 
 
-
-
-
+//definim una funció que imprimeix elements d'un vector començant per la posició from fins a la posició numel+from. Numel= num elements
 void PrintVect(float vect[N],int from,int numel){
 	int i;
 	for( i = from; i <numel+from; i++ ){
@@ -41,6 +39,7 @@ void PrintVect(float vect[N],int from,int numel){
 	}
 }
 
+//definim una funció que imprimeix elements d'una fila d'una matriu des de la posició from fins a la posició numel+from. Fila=row
 void PrintRow( float mat[N][N], int row, int from, int numel ){
 	        for (int i=from; i<from+numel; i++){
 			     printf("%f ",mat[row][i]);
